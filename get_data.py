@@ -12,7 +12,7 @@ death_state = pd.read_csv(url+'deaths_state.csv')
 
 # MySQL database connection
 # format(user:password@host:port/database)
-engine = create_engine('mysql+pymysql://root:1234@localhost:3306/mydb')
+engine = create_engine('mysql://doadmin:AVNS_5UnWLVRf7IthjnMd_kP@covid-malaysia-dashboard-do-user-13633772-0.b.db.ondigitalocean.com:25060/defaultdb?ssl-mode=REQUIRED')
 
 # write DataFrame to MySQL database
 # name - table name
