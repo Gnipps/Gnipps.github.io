@@ -5,22 +5,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Covid-19 Malaysia</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-    <!-- Bootstrap + Meyawo main styles -->
-    <link rel="stylesheet" href="assets/css/meyawo.css">
+    <!--main styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,600">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <!-- Page Navbar -->
+    <header>
+        <div class="container">
+          <h1 class="logo"></h1>
+    
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="malaysia.html">Malaysia</a></li>
+              <li><a href="test.html">States</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
     <!-- End of Page Navbar -->
-    <style>
-        .tableau-center {
-          width: 1366px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-    </style>
+    <!-- Page Content -->
     <div class="tableau-center">
         <div class='tableauPlaceholder' id='viz1680674494464' style='position: relative'><noscript><a href='#'><img
                         alt='What is the Covid-19 situation in Malaysia? '
@@ -43,6 +51,25 @@
     </div>
     <script
         type='text/javascript'>                    var divElement = document.getElementById('viz1680674494464'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1366px'; vizElement.style.height = '795px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1366px'; vizElement.style.height = '795px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '2427px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-</body>
+    <!-- End of Page Content -->
+
+    <!-- Page Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="author-info">
+                    <p>Created by John Doe</p>
+                    <p>Contact: john.doe@example.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/your-github-page-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/your-linkedin-page-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Page Footer -->
+      
+    </body>
 
 </html>

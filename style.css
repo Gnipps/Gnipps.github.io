@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+margin: 0;
+/*background: #222;*/
+font-family: 'Work Sans', sans-serif;
+font-weight: 800;
+padding-top: 10px;
+}
+
+.container {
+width: 80%;
+margin: 0 auto;
+}
+
+header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #333; /* for tableau use 82,92,113 #525C71*/
+color: #fff;
+padding: 10px 0;
+z-index: 999; /* Set the header above the embedded dashboard */
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #ffffff;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.tableau-center {
+width: 1366px; /* Make the embedded dashboard take up the full width of the body */
+margin: 0 auto; /* Center the embedded dashboard horizontally */
+padding-top: 70px; /* Add padding to the top of the embedded dashboard to prevent it from being obscured by the header */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author-info {
+    text-align: left;
+}
+
+.author-info p {
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.social-links a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a i {
+    font-size: 24px;
+}
+
+
+                                                                                                  
