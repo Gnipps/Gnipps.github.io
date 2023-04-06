@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+body {
+margin: 0;
+background: #f1f1f1;
+font-family: 'Work Sans', sans-serif;
+font-weight: 800;
+padding-top: 10px;
+}
+
+.container {
+width: 80%;
+margin: 0 auto;
+}
+
+
+header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #333; /* for tableau use 82,92,113 #525C71*/
+color: #fff;
+padding: 10px 0;
+z-index: 999; /* Set the header above the embedded dashboard */
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #ffffff;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 200ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.tableau-center { 
+width: 1366px; /* Make the embedded dashboard take up the full width of the body */
+margin: 0 auto !important; /* Center the embedded dashboard horizontally */
+padding-top: 70px !important; /* Add padding to the top of the embedded dashboard to prevent it from being obscured by the header */
+padding-bottom: 70px !important;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  bottom: 0;
+  width: 100%;
+    
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.author-info {
+  text-align: left;
+}
+
+.author-info p {
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social-links a {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-links a i {
+  font-size: 24px;
+}
+
+* {
+  box-sizing: border-box !important;
+}
+
+.coronata {
+  background: #fff;
+  padding-top: 100px;
+  padding-bottom: 800px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.titlepage h2 {
+  text-transform: uppercase;
+  font-size: 45px;
+  color: #353d47;
+  line-height: 50px;
+  font-weight: bold;
+  padding: 0;
+  display: inline-block;
+}
+
+.coronata .titlepage p {
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 30px;
+  color: #111111;
+  padding: 35px 0px 50px 0px;
+
+}
+
+.d_flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
